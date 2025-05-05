@@ -3,25 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post 2</title>
-    <link rel="stylesheet" href="style.css">
+    <title>JavaScript ES6 Features</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h2 {
+            color: #34495e;
+        }
+        p {
+            margin: 10px 0;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .highlight {
+            background-color: #e8f5e9;
+            padding: 5px;
+            border-left: 4px solid #2ecc71;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to our Post</h1>
-    </header>
-    <main>
-        <article>
-            <p>Here, you can share your thoughts, ideas, or any updates you'd like to provide. Feel free to customize this text as needed!</p>
-            <p>In this post, we will discuss the importance of web development and how it has evolved over the years. Web development is a crucial skill in today's digital age, enabling individuals and businesses to create an online presence.</p>
-            <p>Stay tuned for more updates and insights on this topic. Don't forget to leave your comments and share your thoughts below!</p>
-            <p>Additionally, web development encompasses a wide range of technologies, including HTML, CSS, JavaScript, and various frameworks. Mastering these tools can open up numerous opportunities in the tech industry.</p>
-            <p>As we move forward, we will explore advanced topics such as responsive design, accessibility, and performance optimization. These are essential aspects of creating user-friendly and efficient websites.</p>
-            <p>Thank you for reading! Make sure to subscribe to our newsletter for the latest updates and tutorials on web development.</p>
-        </article>
-    </main>
-    <footer>
-        <p>&copy; 2025 Your Website. All rights reserved.</p>
-    </footer>
+    <h1>JavaScript ES6 Features</h1>
+    <p>JavaScript ES6 (ECMAScript 2015) introduced several powerful features that make coding more efficient and readable. Here are some of the key features:</p>
+
+    <h2>1. Let and Const</h2>
+    <p>The <code>let</code> and <code>const</code> keywords provide block-scoped variables, replacing the traditional <code>var</code>.</p>
+    <div class="highlight">
+        <pre><code>let name = "John";
+const age = 30;</code></pre>
+    </div>
+
+    <h2>2. Arrow Functions</h2>
+    <p>Arrow functions provide a concise syntax for writing functions.</p>
+    <div class="highlight">
+        <pre><code>const add = (a, b) => a + b;</code></pre>
+    </div>
+
+    <h2>3. Template Literals</h2>
+    <p>Template literals allow embedding expressions in strings using backticks (<code>`</code>).</p>
+    <div class="highlight">
+        <pre><code>const greeting = `Hello, ${name}!`;</code></pre>
+    </div>
+
+    <h2>4. Default Parameters</h2>
+    <p>Functions can have default parameter values.</p>
+    <div class="highlight">
+        <pre><code>function greet(name = "Guest") {
+    return `Hello, ${name}!`;
+}</code></pre>
+    </div>
+
+    <h2>5. Destructuring</h2>
+    <p>Destructuring allows unpacking values from arrays or objects into variables.</p>
+    <div class="highlight">
+        <pre><code>const [a, b] = [1, 2];
+const {name, age} = {name: "John", age: 30};</code></pre>
+    </div>
+
+    <h2>6. Modules</h2>
+    <p>ES6 introduced modules for better code organization.</p>
+    <div class="highlight">
+        <pre><code>// Exporting
+export const add = (a, b) => a + b;
+
+// Importing
+import { add } from './math.js';</code></pre>
+    </div>
+
+    <p>These features, among others, have greatly improved the way we write JavaScript. Start using them to make your code cleaner and more efficient!</p>
 </body>
 </html>
