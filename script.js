@@ -86,4 +86,49 @@ style.textContent = `
         color: #f1f1f1;
     }
 `;
-document.head.appendChild(style);
+// Back-to-top button
+const backToTopButton = document.createElement('button');
+backToTopButton.textContent = '⬆️';
+backToTopButton.style.position = 'fixed';
+backToTopButton.style.bottom = '80px';
+backToTopButton.style.right = '20px';
+backToTopButton.style.background = 'var(--primary-color)';
+backToTopButton.style.color = 'white';
+backToTopButton.style.border = 'none';
+backToTopButton.style.borderRadius = '50%';
+backToTopButton.style.width = '50px';
+backToTopButton.style.height = '50px';
+backToTopButton.style.fontSize = '1.5rem';
+backToTopButton.style.cursor = 'pointer';
+backToTopButton.style.zIndex = '1000';
+backToTopButton.style.display = 'none';
+backToTopButton.setAttribute('aria-label', 'Back to top');
+
+document.body.appendChild(backToTopButton);
+
+// Show/hide back-to-top button on scroll
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+});
+
+// Scroll to top when button is clicked
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// Dynamic year in footer
+const footerYear = document.querySelector('.footer-year');
+if (footerYear) {
+    footerYear.textContent = new Date().getFullYear();
+}
+
+particlesJS.load('particles-js', 'particles.json', function() {
+    console.log('Particles.js loaded!');
+});
