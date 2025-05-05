@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <header class="main-header">
         <div class="container">
-            <h1><a href="index.html">My Blog</a></h1>
+            <h1><a href="index.html">Skyone</a></h1>
             <nav class="main-nav">
                 <button class="hamburger" aria-label="Toggle menu">☰</button>
                 <ul class="nav-list">
@@ -20,11 +21,19 @@
             </nav>
         </div>
     </header>
+    <section class="hero">
+        <h1>Welcome to My JavaScript Blog</h1>
+        <p>Explore the latest trends and features in JavaScript development.</p>
+        <a href="posts" class="cta-button">Get Started</a>
+    </section>
+    <section id="posts" class="recent-posts">
+<div class="posts-grid">
+</div> 
+<!-- Closing div for posts-grid -->
 
     <main class="container">
         <section class="featured-post">
             <article class="post-card">
-                <img src="https://i.pinimg.com/736x/2a/24/6c/2a246caf3a78bf9c43a14e1476ef0185.jpg" alt="Featured post image">
                 <div class="post-content">
                     <h2>Featured Post: The Future of Web Development</h2>
                     <p class="post-meta">Posted on <time datetime="2025-05-3">May 3, 2025</time> by Admin</p>
@@ -53,7 +62,7 @@
                         <h3>Responsive Design Principles</h3>
                         <p class="post-meta">Posted on <time datetime="2023-05-05">May 5, 2023</time> by Admin</p>
                         <p>Learn the fundamental principles of creating websites that work on any device...</p>
-                        <a href="#" class="read-more">Read More</a>
+                        <a href="posts/post3.html" class="read-more">Read More</a>
                     </div>
                 </article>
             </div>
@@ -81,5 +90,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <div id="particles-js"></div>
 </body>
 </html>
